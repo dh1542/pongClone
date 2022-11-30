@@ -14,7 +14,7 @@ const ballColor = "white";
 
 
 
-const paddleSpeed = 50;
+const paddleSpeed = 75;
 
 let intervalID;
 
@@ -54,10 +54,10 @@ function controlPanel(event){
     let paddleDown = 83;
 
     if(keypress == paddleDown){
-        paddle1.y += 75;
+        paddle1.y += paddleSpeed;
     }
     else if(keypress == paddleUp){
-        paddle1.y -= 75;
+        paddle1.y -= paddleSpeed;
     }
 }
 function clearBoard(){
